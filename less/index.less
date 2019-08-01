@@ -53,7 +53,250 @@ table {
     box-sizing: border-box;
 }
 
+
+
 html, body {
-    height: 100%;
+	height: 100%;
+}
+
+.container {
+	background: #C0C0C0;
+	width: 800px;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	border: 2px solid black;
+	font-weight: bold;
+	background: gray;
+}
+
+h1 {
+	font-size: x-large;
+}
+
+nav {
+	margin-top: 5px;
+}
+
+a {
+	border: 2px solid black;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	background: lightgrey;
+}
+
+.top {
+	display: flex;
+	justify-content: space-around;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.top{
+	.top-text {
+		width: 350px;
+		padding: 20px;
+	}
+} 
+
+.top {
+	.top-text {
+		h2 {
+		  font-size: 30px;
+    	  font-weight: bold;
+		}
+	}
+}
+
+.top {
+	.top-text {
+		p{
+			font-size: 25px;
+		}
+	}
+}
+.top {
+	img {
+		height: 375px;
+		padding: 10px 35px 10px 35px;
+		border-right: 2px solid black;
+		
+	}
+}
+
+.middle {
+	width: 800px;
+	border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.middle {
+	.jobs{
+		display: flex;
+		justify-content: space-evenly;
+		border-bottom: 2px solid black;
+		height: 50px;
+		padding-top: 8px;
+		background: gray;
+	}
+}
+
+.middle {
+	.jobs {
+		h3 {
+			font-weight: bold;
+			font-size: 30px;
+		}
+	}
+}
+
+.middle {
+	.Job{
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 2px solid black;
+		height: 50px;
+		padding: 15px;
+		font-weight: bold;
+		background: lightgrey
+	}
+}
+
+.bottom {
+	display: flex;
+	justify-content: space-evenly;
+	border-right: 2px solid black;
+    border-left: 2px solid black;
+	height: 302px;
+	
+}
+
+.bottom {
+	.skills {
+		padding: 20px 20px 20px 0;
+	}
+}
+
+.skills {
+	h4 {
+		text-align: left;
+	}
+}
+.skills {
+	li {
+		font-weight: bold;
+	}
+}
+
+.contact {
+	text-align: center;
+	font-weight: bold;
+	padding: 40px 0px 0px 60px;
+	border-left: 2px solid black;
+}
+
+.contact {
+	.info {
+		font-weight: bold;
+		font-size: 22px;
+		margin-top: 20px;
+		font-style: italic;
+	}
+}
+
+h4{ 
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	// border-top: 2px solid black;
+	position: fixed;
+	font-weight: bold;
+	padding: 15px;
+	width: 800px;
+	height: 50px;
+	background-color: grey;
+	color: black;
+	text-align: center;
+	bottom: 0;
+	border: 2px solid black;
+	// border-left: 2px solid black;
+	
+}
+
+
+@media(max-width: 500px) {
+
+	body {
+		width: 500px;
+		margin : 0;
+	}
+
+	.container {
+	    width: 500px;
+	}
+
+	header {
+		justify-content: space-evenly;
+	}
+
+	header {
+		h1 {
+			display: none;
+		}
+	}
+	
+	.top {
+		img {
+			display: none;
+		}
+	}
+
+	.top {
+		.top-text{
+			text-align: center;
+		}
+	}
+
+	.middle {
+		width: 500px;
+	}
+
+	.middle {
+		.Job {
+			p:last-child {
+				display: none;
+			}
+		}
+	}
+
+	.middle {
+		.Job {
+			p:nth-last-child(2) {
+				display: none;
+			  }
+		}
+	}
+
+	.skills {
+		padding-left: 20px;
+	}
+
+	.contact {
+		padding: 20px;
+	}
+	footer {
+		width: 500px;
+	}
 }
 
